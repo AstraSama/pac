@@ -20,9 +20,8 @@ int main () {
     };
 
     mov:
-        while (test < 10) {
-            printf(" %d %d\n", x, y);
-            printf("| (%d %d) %c |", x, y, map[x][y]);
+        while (test < 50) {
+            printf("| posição (%d %d) %c |\n", x, y, map[x][y]);
             if(way == 1) { //up
                 if(map[x + 1][y] == 's') {
                     x = x + 1;
